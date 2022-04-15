@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /*  Colors */
+
+    /*  Primary */
+
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+
+    /*  Neutral */
+
+    --darkGray: hsl(0, 0%, 59%);
+
+    /* Typography */
+
+    font-size: 18px;
+};
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: var(--darkCyan);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card-container{
+    background-color: white;
+    width: 25rem;
+    height: 27rem;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.card-container .top-bkg{
+    width: 100%;
+    height: 38.88%;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px var(--darkGray);
+}
+
+.text-container img {
+    border-radius: 100%;
+    border: solid 5px white; 
+    margin-top: -3rem;
+}
+
+.text-container h2{
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: var(--veryDarkDesaturatedBlue);
+    margin-bottom: 0;
+}
+
+.text-container span {
+    color: var(--darkGrayishBlue);
+    font-weight: 400;
+}
+
+.text-container p{
+    color: var(--darkGrayishBlue);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbers-container h3 {
+    color: var(--veryDarkDesaturatedBlue);
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.numbers-container p{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--darkGrayishBlue);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+}
