@@ -26,7 +26,8 @@
 }
 
 body {
-    background: var(--darkCyan);
+    background: url(images/bg-pattern-top.svg) no-repeat , url(images/bg-pattern-bottom.svg) no-repeat , var(--darkCyan);
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
     min-height: 100vh;
     display: flex;
     justify-content: center;
